@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Calculator app</title>
+
+</head>
+<body class="body" id="red">
+  <main class="main flex">
+    <div class="container flex">
+      <div class="calc-head flex">
+        <p class="calc-text">calc</p>
+        <div class="theme-box">
+          <p class="theme-para">THEME</p>
+          <div class="theme-btn-container flex">
+            <input type="button" data-theme="red" class="theme-btn" id="red-btn" value=" " title="btn">
+            <input type="button" data-theme="blue" class="theme-btn" id="blue-btn" value=" " title="btn">
+            <input type="button" data-theme="green" class="theme-btn" id="green-btn" value=" " title="btn">
+          </div>
+        </div>
+      </div>
+      <div class="calculator flex">
+        <div id="screen" class="calc-screen"></div>
+        <div class="calc-buttons">
+          <button type="button" class="keys common-keys">7</button>
+          <button type="button" class="keys common-keys">8</button>
+          <button type="button" class="keys common-keys">9</button>
+          <button type="button" class="keys" id="del">DEL</button>
+          <button type="button" class="keys common-keys">4</button>
+          <button type="button" class="keys common-keys">5</button>
+          <button type="button" class="keys common-keys">6</button>
+          <button type="button" class="keys common-keys">+</button>
+          <button type="button" class="keys common-keys">1</button>
+          <button type="button" class="keys common-keys">2</button>
+          <button type="button" class="keys common-keys">3</button>
+          <button type="button" class="keys common-keys">-</button>
+          <button type="button" class="keys common-keys">.</button>
+          <button type="button" class="keys common-keys">0</button>
+          <button type="button" class="keys common-keys">/</button>
+          <button type="button" class="keys common-keys">*</button>
+          <button type="button" class="keys" id="reset" onclick="clearDisplay()">RESET</button>
+          <button type="button" class="keys" id="equal" onclick="evaluateInput()">=</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js" ></script>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>. 
+    Coded by <a href="">Macaulay Omoikhoje De-great</a>.
+  </div>
+</body>
+<!-- <footer class="footer">
+  
+</footer> -->
+</html>
